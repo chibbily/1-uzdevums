@@ -1,0 +1,299 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+h1 {
+    padding: 72px;
+    border-radius:8px;
+    margin: 0 auto;
+    font-size: 84px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    text-align: center;
+}
+p{
+    line-height: 2.5;
+}
+
+main{
+    margin: 0 auto;
+    padding: 150px;
+    width: 70%;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+/* Banner */
+#banner {
+    height: 50vh;
+    display:compact;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size:cover ;
+    background: rgba(0, 0, 0, 0.2) url("img/blog 5.jpg") fixed center;
+    background-blend-mode: overlay;
+    color: black;
+}
+
+#banner h3{
+    background-color: blue;
+    border-radius: 8px;
+    padding: 0 24px;
+    font-size: 24px;
+}
+
+/* Navigation */
+
+nav{
+    height: 72px;
+    background: black;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+
+}
+
+nav a{
+    padding:0 32px;
+    color: lightgray;
+    transition: 0.4s;
+}
+
+nav a:hover{
+    text-decoration:none;
+    color: blue;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.active{
+    color:blue;
+}
+/* Sections */
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.section-heading {
+    font-size: 32px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-left: 3px solid  black;
+    border-left: 3px solid black;
+    transition: all 0.4s;
+    display: inline-block;
+    padding: 4px 32px;
+
+}
+
+.section-heading:hover{
+    padding: 4px 48px;
+    background: blue;
+}
+
+/*Card*/
+
+.card-image {
+    transition: 0.4s;
+}
+
+.card-image:hover {
+    box-shadow: 0 10px 6px -6px #777777;
+}
+
+.card .card-description {
+    padding: 0 8px;
+}
+
+/* Read more poga */
+
+.btn-readmore{
+    padding: 8px 24px;
+    border: 3px solid black;
+    transition: 0.4s;
+    display: inline-block;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    font-weight:bold;
+    cursor: pointer;
+    background: white;
+}
+.btn-readmore:hover{
+    background: blue;
+    text-decoration: none;
+    padding: 8px 64px;
+    color: white;
+}
+
+/*Footer*/
+
+footer{
+    background: black;
+    padding: 8px;
+    color: lightgray;
+    display: flex;
+}
+footer a{
+    color: white;
+}
+
+footer #left-footer {
+    flex: 1;
+    border-right: 1px solid blue;
+    padding-left: 32px;
+}
+
+footer #left-footer ul{
+    padding: 0;
+    list-style:none;
+    line-height: 1.5;
+}
+
+footer #right-footer{
+    flex: 2;
+    padding: 8px;
+    text-align: center;
+}
+
+footer #social-media-footer a .fa-facebook,
+footer #social-media-footer a .fa-instagram,
+footer #social-media-footer a .fa-github {
+    color: white;
+    transition: 0.4s;
+}
+
+footer #social-media-footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+footer #social-media-footer UL LI{
+    font-size: 48px;
+    padding: 16px;
+    transition: 0.4s;
+}
+
+footer #social-media-footer ul li:hover a .fa-facebook {
+    color: blue;
+}
+
+footer #social-media-footer ul li:hover a .fa-instagram {
+    color: purple;
+}
+
+footer #social-media-footer ul li:hover a .fa-github {
+    color: #bbbbbb;
+}
+
+/*Socialie tikli*/
+
+@media (max-width:719px){
+    main{
+        width: 95%;
+    }
+    section{
+        flex-direction: column;
+    }
+    .card,
+    .card .card-image img {
+        width: 100%;
+    }
+}
+
+footer{
+    flex-direction: column;
+    text-align: center;
+}
+
+footer #left-footer {
+    flex: 1;
+    border-right: 0;
+    padding-left: 0;
+}
+
+footer #right-footer {
+    background: white;
+    color: black;
+}
+
+footer #right-footer a{
+    color: black;
+}
+
+footer #social-media-footer a .fa-facebook,
+footer #social-media-footer a .fa-instagram,
+footer #social-media-footer a .fa-github {
+    color: black;
+    transition: 0.4s;
+}
+
+@media (max-width: 600px) {
+    main{
+        width: 100%;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    .card{
+        text-align: center;
+    }
+}
+
+@media(min-width: 720px){
+    main{
+        width: 75%;
+    }
+    card{
+        width: 45%;
+    }
+    .card .card-image img {
+        width: 55%;
+    }
+}
+
+/*Galerija*/
+
+.gallery {
+    margin: 10px 50px;
+}
+
+.gallery img {
+    transition: 1s;
+    padding: 15px;
+    width:200px;
+}
+
+.gallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+
+}
